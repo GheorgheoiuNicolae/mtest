@@ -1,0 +1,25 @@
+{
+  "name": "material",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "counter-up": "~1.0.0",
+    "waypoints": "jquery-waypoints#~4.0.0",
+    "material-icons": "~0.1.0"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "~3.3.0",
+    "mocha": "~2.3.2",
+    "materialize": "~0.97.1"
+  }
+}
