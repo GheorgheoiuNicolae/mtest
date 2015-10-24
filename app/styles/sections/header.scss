@@ -1,0 +1,72 @@
+// HEADER
+.main-nav {
+  position: fixed;
+  z-index: 9;
+}
+.nav-wrapper {
+  position: fixed;
+  padding: 0 0 0 20px;
+}
+nav a.brand-logo {
+  padding: 10px;
+  img {
+    padding:0px 0px 5px 0;
+    height: 40px;
+    position: relative;
+    // top: -3px;
+  }
+}
+// style for the language select
+nav li.select-language {
+  background-color: rgba(0,0,0,0.1);
+  a {
+    color: #555;
+    height: auto;
+    line-height: initial;
+    padding: 10px 12px 20px 13px;
+    font-size: .6rem;
+    &:hover {
+      color: #000;
+      text-decoration: none;
+    }
+    i {
+      height: auto;
+      padding: 5px 0;
+      line-height: initial;
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+}
+nav li.active {
+  background-color: $brandColor!important;
+  a {
+    color: #fff!important;
+  }
+}
+nav ul a {
+  color: $text;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: .9rem;
+  &:hover {
+    color: $brandColor;
+  }
+}
+#language-dropdown {
+  top: 30px!important;
+  li a {
+    font-size: .9rem;
+    padding: 10px 20px;
+  }
+}
+
+section.statistics {
+  i {
+    font-size: 2rem;
+    padding: 10px;
+    background-color: #fff;
+    color: $brandColor;
+    border-radius: 100%;
+  }
+}
