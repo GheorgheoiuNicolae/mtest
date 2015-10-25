@@ -1,8 +1,13 @@
 $icon-font-path: '../fonts/';
 
+/*** Fonts ***/
+$roboto-font-path: "../fonts/" !default;
+$icons-font-path: "../fonts/" !default;
+
+
 // bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/font-awesome/scss/font-awesome.scss";
+@import "bower_components/materialize/sass/materialize.scss";
 // endbower
 
 
