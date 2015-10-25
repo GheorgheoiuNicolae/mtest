@@ -1,0 +1,19 @@
+.page-info {
+  max-width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+  img {
+    width: 200%;
+  }
+  .content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    h1 {
+      margin-bottom: -15px;
+      color: #fff;
+      text-shadow: 1px 1px 3px #999;
+    }
+  }
+}

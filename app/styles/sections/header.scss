@@ -1,4 +1,9 @@
 // HEADER
+a.toggle-menu {
+  i {
+    color: grey;
+  }
+}
 .main-nav {
   position: fixed;
   z-index: 9;
@@ -39,7 +44,7 @@ nav li.select-language {
   }
 }
 nav li.active {
-  background-color: $brandColor!important;
+  background-color: $primary-color!important;
   a {
     color: #fff!important;
   }
@@ -50,7 +55,7 @@ nav ul a {
   font-weight: 400;
   font-size: .9rem;
   &:hover {
-    color: $brandColor;
+    color: $primary-color;
   }
 }
 #language-dropdown {
@@ -66,7 +71,7 @@ section.statistics {
     font-size: 2rem;
     padding: 10px;
     background-color: #fff;
-    color: $brandColor;
+    color: $primary-color;
     border-radius: 100%;
   }
 }

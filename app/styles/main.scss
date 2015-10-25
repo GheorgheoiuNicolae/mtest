@@ -11,21 +11,49 @@ $icons-font-path: "../fonts/" !default;
 // endbower
 
 
-@import "variables.scss";
 
+@import "variables.scss";
 @import "sections/header.scss";
 @import "sections/homepage-slider.scss";
+@import "sections/footer.scss";
+@import "sections/page-info.scss";
 
-
-
-
+// General styles
 .browserupgrade {
 	margin: 0.2em 0;
 	background: #ccc;
 	color: #000;
 	padding: 0.2em 0;
 }
+.section-title {
+	padding: 30px;
+}
+.devider {
+  height: 1px;
+  background: #eee;
+  margin-top: 10px;
+}
+.padding {
+	padding: 20px;
+}
+.margin {
+	margin: 20px;
+}
+.clearfix {
+	display: table;
+	content: "";
+}
+p.note {
+	background-color: coral;
+	padding: 5px;
+	color: #fff;
+}
 
+
+
+
+// SECTIONS: HOMEPAGE
+// The first section on the homepage
 .icon-block {
 	background-color: white;
 	padding: 20px;
@@ -40,47 +68,99 @@ $icons-font-path: "../fonts/" !default;
 	}
 }
 
-.section-title {
-	padding: 30px;
+// HOMEPAGE: Statistics
+.statistics {
+  padding: 50px;
 }
 
+// Added so we'll have a max height for the homepage card
+.card .card-image {
+	max-height: 310px;
+}
+.card .card-action a {
+	color: $primary-color;
+	&:hover, &:focus {
+		color: $primary-color;
+	}
+}
 
-
+// Style tabs - tabs on homepage
 .feature-tabs {
   img {
     max-height: 300px;
   }
 }
-
-
-.statistics {
-  padding: 50px;
-}
-
-
-.devider {
-  height: 1px;
-  background: #eee;
-  margin-top: 10px;
-}
-.padding {
-	padding: 20px;
-}
-.margin {
-	margin: 20px;
-}
-
-
-.newsbox {
-	background-color: #FFF;
-	margin-bottom: 20px;
-	img {
-		max-width: 100%;
-		max-width: 30%;
-		float: left;
+.tabs .tab a {
+	color: $primary-color;
+	&:hover {
+		color: $primary-color;
 	}
 }
-.clearfix {
-	display: table;
-	content: "";
+.tabs .indicator {
+	background-color: $primary-color;
+}
+
+// Style for Counter
+p.counter {
+	font-size: 28px;
+	margin: 0;
+}
+
+
+// News Elements
+.news-wrap {
+	padding-top: 50px;
+}
+.newsbox .post-info {
+	color: #999;
+	margin-bottom: 20px;
+}
+.newsbox span.card-title {
+	text-shadow: 1px 1px 1px #333;
+}
+.newsbox .card-image {
+	height: 200px;
+	overflow: hidden;
+}
+.news-wrap .pagination li.active {
+	background-color: grey;
+}
+.news-wrap a.back {
+	i {
+		font-size: 12px;
+	}
+}
+// Single article
+.news-article {
+	h1.news-title {
+		color: $text-dark;
+		font-size: 32px;
+		margin-top: 0;
+		padding-left: 20px;
+		border-left: 2px solid $primary-color;
+	}
+	img {
+		max-width: 100%;
+	}
+	.article-content {
+		padding: 20px;
+		margin: 30px 0;
+		background-color: #efefef;
+		blockquote {
+			border-color: white;
+		}
+	}
+}
+.article-aside {
+	h5 {
+		margin-top: 0;
+	}
+	.other-articles li {
+		background-color: #efefef;
+		margin: 10px;
+		padding: 10px;
+		i {
+			margin-right: 10px;
+		}
+	}
 }
